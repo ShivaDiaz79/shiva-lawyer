@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+
 import SectionShiva from './components/sectionShiva'
 import Layout from '../../../components/Layout'
 

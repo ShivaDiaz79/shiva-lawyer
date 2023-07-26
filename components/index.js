@@ -5,7 +5,7 @@ import EfectoCool from "./EfectoCool/EfectoCool";
 import Footers from "./Footers/Footers";
 import Gallery from "./Contenido/Gallery";
 import SearchComponent from "./Search/SearchComponent";
-import MenuPlegable from "./Plegable/MenuPlegable";
+
 
 export {
   Hero,
@@ -14,7 +14,7 @@ export {
   Footers,
   Gallery,
   SearchComponent,
-  MenuPlegable,
+ 
 
   // otros componentes
 };

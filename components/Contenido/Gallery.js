@@ -60,7 +60,7 @@ const Gallery = () => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
         }
       >
-        Siguiente
+        apretar para ver mas
       </button>
     </div>
   );

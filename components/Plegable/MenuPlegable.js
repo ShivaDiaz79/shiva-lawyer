@@ -1,102 +1,46 @@
-import React from "react";
+import Link from 'next/link';
 
-export const MenuPlegable = () => {
+const MenuPlegable = ({ menuDown }) => {
   return (
-    <div>
-      <div className="flow-root">
-        <ul className="-my-2 divide-y divide-gray-100">
-          <li className="py-2">
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
-                >
-                  Profile
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Team
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Meetings
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Calendar
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li className="py-2">
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Update
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Help
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href=""
-                  className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-                >
-                  Settings
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li className="py-2">
-            <form action="/logout">
-              <button
-                type="submit"
-                className="block w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
-              >
-                Logout
-              </button>
-            </form>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <>
+      {menuDown !== '' && (
+        <div className="hidden sm:flex sm:flex-col justify-center p-4 text-left pb-40 ms-24">
+          {menuDown === 'servicios' && (
+            <>
+              <MenuItem link="/servicios/derechoPenal" text="DERECHO PENAL" />
+              <MenuItem link="/servicios/derechoInternacional" text="DERECHO INTERNACIONAL" />
+              <MenuItem link="/servicios/derechoInternacionalPenal" text="DERECHO INTERNACIONAL PENAL" />
+              <MenuItem link="/servicios/derechoInformatico" text="DERECHO INFORMATICO" />
+              <MenuItem link="/servicios/derechoNotarial" text="DERECHO NOTARIAL" />
+              <MenuItem link="/servicios/derechoEmpresarial" text="DERECHO EMPRESARIAL" />
+              <MenuItem link="/servicios/derechoFamilia" text="DERECHO DE FAMILIA" />
+              <MenuItem link="/servicios/derechoProcesal" text="DERECHO PROCESAL" />
+              <MenuItem link="/ejecucionPenal" text="EJECUCION PRIVATIVA DE LA PENA" />
+            </>
+          )}
+          
+          {menuDown === 'legal' && (
+            <>
+              <MenuItem link="eticaProfesional" text="ETICA PROFESIONAL" className="flex items-end justify-end" />
+              <MenuItem link="leyes" text="LEYES Y REGLAMENTOS" className="flex items-end justify-end" />
+              <MenuItem link="fallos" text="FALLOS DE INTERES" className=" flex items-end justify-end" />
+            </>
+          )}
+       
+        </div>
+      )}
+    </>
   );
 };
+
+const MenuItem = ({ link, text, className }) => {
+  return (
+    <ul className={`my-3 ${className}`}>
+      <Link href={link}>
+        <span className="text-gray-400 text-sm font-orbitron font-bold hover:text-black">{text}</span>
+      </Link>
+    </ul>
+  );
+};
+
+export default MenuPlegable;
