@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,13 +21,12 @@ const Navbar = () => {
   };
 
   const NavItem = ({ href, text, onClick }) => (
-    <Link href={href}
-      
-        onClick={onClick}
-        className="text-white hover:text-white px-3 py-2 rounded-md text-xl font-saira font-medium flex items-center pr-5 mt-4 lg:inline-block lg:mt-0"
-      >
-        {text}
-      
+    <Link
+      href={href}
+      onClick={onClick}
+      className="text-white hover:text-white px-3 py-2 rounded-md text-xl font-saira font-medium flex items-center pr-5 mt-4 lg:inline-block lg:mt-0"
+    >
+      {text}
     </Link>
   );
 
@@ -48,7 +45,11 @@ const Navbar = () => {
               />
             </div>
             <div id="menu" className="hidden ml-6 lg:flex lg:space-x-4">
-              <NavItem href="/" text="SERVICIOS" onClick={() => abrirMenu("servicios")} />
+              <NavItem
+                href="/"
+                text="SERVICIOS"
+                onClick={() => abrirMenu("servicios")}
+              />
               <NavItem href="/noticias" text="NOTICIAS" />
             </div>
           </div>
@@ -58,8 +59,9 @@ const Navbar = () => {
             </h1>
           </Link>
           <div className="hidden items-center space-x-4 lg:flex">
+          <NavItem href="/" text="LEGAL" onClick={() => abrirMenu("legal")} />
             <NavItem href="/contacto" text="CONTACTO" />
-            <NavItem href="/" text="LEGAL" onClick={() => abrirMenu("legal")} />
+           
           </div>
           <div className="flex items-center -mr-2 lg:hidden">
             <button
@@ -78,7 +80,12 @@ const Navbar = () => {
                 stroke="currentColor"
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
               <svg
                 className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`}
@@ -88,13 +95,21 @@ const Navbar = () => {
                 stroke="currentColor"
                 aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
         </div>
       </div>
-      <div className={`${isMenuOpen ? "block" : "hidden"} lg:hidden h-screen`} id="mobile-menu">
+      <div
+        className={`${isMenuOpen ? "block" : "hidden"} lg:hidden h-screen`}
+        id="mobile-menu"
+      >
         <MenuNavbar />
       </div>
       <MenuPlegable menuDown={menuDown} />

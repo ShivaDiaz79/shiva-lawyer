@@ -1,9 +1,12 @@
 import React from 'react'
 import Layout from '../../../../components/Layout'
+import SectionInformatico from './components/sectionInformatico'
 const index = () => {
   return (
     <Layout>
-    <div>index</div>
+     <header className="bg-black py-4">
+        <SectionInformatico/>
+      </header>
     </Layout>
   )
 }

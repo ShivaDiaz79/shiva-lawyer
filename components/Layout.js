@@ -1,6 +1,6 @@
 // components/Layout.js
 import Navbar from './Navbar';
-import Footers from './Footers/Footers';
+import Footers from './Footers';
 import ContactWhatsapp from './Contenido/ContactWhatsapp';
 
 const Layout = ({ children }) => {

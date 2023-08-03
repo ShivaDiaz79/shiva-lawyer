@@ -1,6 +1,6 @@
-import React from 'react';
-import Gallery from './Contenido/Gallery';
-import SearchComponent from './Search/SearchComponent';
+import React from "react";
+import Gallery from "./Contenido/Gallery";
+import SearchComponent from "./Search/SearchComponent";
 
 const Hero = () => {
   return (

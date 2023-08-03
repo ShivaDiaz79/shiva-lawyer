@@ -1,13 +1,19 @@
-import React from 'react'
-import Layout from '../../../../components/Layout'
 
+import Layout from "../../../../components/Layout";
+import SectionAgraria from "./components/sectionAgraria";
 
 const index = () => {
   return (
     <Layout>
-    <div>index</div>
+      <header className="bg-black py-4">
+    
+ 
+      <SectionAgraria />
+      </header>
+   
     </Layout>
-  )
-}
+  );
+};
 
-export default index
+export default index;
+

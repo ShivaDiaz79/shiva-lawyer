@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '../../../components/Layout'
+import AutocompleteForm from './components/AutocompleteForm'
 
 const index = () => {
   return (
     <Layout>
-    <div>index</div>
+    <div>
+      <AutocompleteForm/>
+    </div>
     </Layout>
   )
 }
