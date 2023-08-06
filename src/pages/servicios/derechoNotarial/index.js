@@ -1,10 +1,13 @@
 import React from 'react'
 import Layout from '../../../../components/Layout'
+import SectionNotarial from './components/sectionNotarial'
 
 const index = () => {
   return (
     <Layout>
-    <div>index</div>
+     <header className="bg-black py-4">
+        <SectionNotarial/>
+      </header>
     </Layout>
   )
 }

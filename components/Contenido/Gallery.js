@@ -43,7 +43,7 @@ const Gallery = () => {
   }, [images.length]); // Agregamos images.length como dependencia del useEffect
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className=" bg-gray-800 flex flex-col items-center justify-center h-screen text-gray-800">
       <div className="relative w-full h-full">
       <Image
           src={images[currentIndex].src}
@@ -60,7 +60,7 @@ const Gallery = () => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
         }
       >
-        apretar para ver mas
+        Siguiente
       </button>
     </div>
   );

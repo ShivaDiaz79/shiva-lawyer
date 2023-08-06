@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const SectionAgraria = () => {
   return (
-    <div className="bg-gray-800 min-h-screen border-8 border-solid border-red-800 pt-10 grid sm:grid-cols-3 mx-1 sm:mx-10 mb-20">
-      <div className=" bg-red-900 h-80 m-2 flex items-center justify-center w-80 sm:w-80 sm:h-80 sm:my-auto border-8 mx-auto border-solid border-red-800">
+    <div className="bg-gray-800 min-h-screen border-8 border-solid border-red-800 pt-10 grid md:grid-cols-3 mx-1 md:mx-10 mb-20">
+      <div className="bg-red-900 h-60 m-2 flex items-center justify-center w-80 md:w-96 md:h-72 md:my-auto border-8 mx-auto border-solid border-red-800">
         <Image
-          src="/Img/derechoAgrario.png"
+          src="/Img/derecho-Agrario.jpg"
           alt="foto"
-          width={400}
-          height={400}
+          width={800}
+          height={600}
         />
       </div>
 
@@ -78,7 +78,7 @@ const SectionAgraria = () => {
           Negociación y mediación en la resolución de conflictos contractuales
           entre agricultores y propietarios de tierras.
           <br />
-        COMERCIO INTERNACIONAL AGRICOLA:
+          COMERCIO INTERNACIONAL AGRICOLA:
           <br />
           Asesoramiento en la importación y exportación de productos agrícolas,
           considerando los tratados comerciales internacionales en los que

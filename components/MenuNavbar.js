@@ -71,8 +71,8 @@ const MenuNavbar = () => {
                 label="Derecho Internacional"
               />
               <SubMenuItem
-                href="/servicios/derechoInternacionalPenal"
-                label="Derecho Internacional Penal"
+                href="/servicios/derechoCivil"
+                label="Derecho Civil"
               />
               <SubMenuItem
                 href="/servicios/derechoInformatico"

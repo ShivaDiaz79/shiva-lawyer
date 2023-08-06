@@ -2,116 +2,162 @@ import Image from "next/image";
 
 const SectionEmpresarial = () => {
   return (
-    <div className="bg-gray-800 min-h-screen border-8 border-solid border-red-800 pt-10 grid sm:grid-cols-3 mx-1 sm:mx-10 mb-20">
-    
+    <div className="bg-gray-800 min-h-screen border-8 border-solid border-red-800 pt-10 grid md:grid-cols-3 mx-1 md:mx-10 mb-20">
+      <div className="bg-red-900 h-60 m-2 flex items-center justify-center w-80 md:w-96 md:h-72 md:my-auto border-8 mx-auto border-solid border-red-800">
+        <Image
+          src="/Img/derechoEmpresarial.jpg"
+          alt="foto"
+          width={800}
+          height={600}
+        />
+      </div>
 
       <div className=" bg-red-800 h-screeen m-2 border-8 border-solid border-gray-800 sm:col-span-2">
         <h1 className="text-white text-xl font-thin font-orbitron p-2 text-center underline">
-          REGULACION DE LA PROPIEDAD Y TENENCIA DE LA TIERRA
+          Evolución del Derecho Empresarial en Miras de Industrialización y
+          Explotación de Recursos Naturales en Bolivia:
         </h1>
         <p className="text-white p-4 ">
           {" "}
-          El derecho agrario aborda la forma en que se regula la propiedad y
-          tenencia de la tierra en el sector agrícola. <br />
+          Bolivia, siendo un país rico en recursos naturales como la minería y
+          la ganadería, ha experimentado una significativa evolución en su
+          derecho empresarial para adecuarse a las necesidades y desafíos de la
+          industrialización y la explotación responsable de sus recursos.
+          Algunos aspectos destacados incluyen:. <br />
           Esto incluye temas como la adquisición, transmisión, deslinde y
-          registro de la tierra. <br /> El derecho de propiedad agraria es un
-          componente esencial del derecho agrario que regula la titularidad y
-          tenencia de la tierra utilizada para actividades agrícolas. Su
-          relevancia radica en garantizar la seguridad jurídica de las
-          posesiones, ofreciendo protección contra posibles disputas y
-          conflictos de propiedad. Una sólida estructura jurídica en esta área
-          proporciona a los interesados la confianza necesaria para realizar
-          inversiones a largo plazo y planificar de manera estratégica el
-          desarrollo y crecimiento de sus actividades agrícolas. Dentro del
-          marco del derecho de propiedad agraria, se contemplan aspectos como
-          los procedimientos de adquisición y transmisión de la tierra, las
-          formas de tenencia (propiedad, arrendamiento, etc.), y los derechos y
-          obligaciones de las partes involucradas en los contratos de
-          arrendamiento.{" "}
+          registro de la tierra. <br />
+          Normativas de Protección Ambiental y Responsabilidad Social
+          Empresarial:
+          <br />
+          El derecho empresarial boliviano ha evolucionado para incorporar
+          normativas más rigurosas en materia de protección ambiental y
+          responsabilidad social. Esto se refleja en la regulación de las
+          actividades extractivas, donde las empresas deben cumplir con
+          estándares estrictos para preservar el medio ambiente y garantizar el
+          bienestar de las comunidades locales afectadas por sus operaciones.
+          <br />
+          Incentivos y Promoción de Inversiones:
+          <br />
+          Bolivia ha implementado políticas de promoción de inversiones para
+          atraer capitales nacionales e internacionales en el desarrollo de
+          proyectos industriales y de explotación de recursos naturales. El
+          derecho empresarial ofrece incentivos fiscales y facilidades
+          administrativas para fomentar la inversión en sectores estratégicos de
+          la economía.{" "}
         </p>
         <h1 className="text-white text-xl p-2 text-center underline font-thin font-orbitron">
-          POLITICAS DE IMPORTACION Y EXPORTACION AGRICOLA
+          Derecho Empresarial de las Importaciones en Bolivia:
         </h1>
         <p className="text-white p-4">
-          son un componente clave del derecho agrario con un impacto directo en
-          el comercio internacional de productos agrícolas. Estas políticas
-          regulan aspectos como aranceles, cuotas, subsidios y restricciones
-          para proteger los intereses del país y fomentar una economía agrícola
-          sostenible y competitiva. En términos de importación, las políticas
-          pueden afectar la disponibilidad y precios de insumos y bienes
-          agrícolas extranjeros en el mercado local. Una política de importación
-          bien equilibrada puede favorecer la adopción de tecnología moderna y
-          aumentar la eficiencia en la producción agrícola.
+          En el contexto de importaciones en Bolivia, el derecho empresarial se
+          ha adaptado para facilitar el comercio internacional y asegurar el
+          cumplimiento de las normativas aduaneras. Algunos aspectos relevantes
+          son:
+          <br />
+          Tratados y Acuerdos Comerciales: <br /> Bolivia ha suscrito diversos
+          tratados y acuerdos comerciales internacionales que influyen en el
+          derecho empresarial de las importaciones. Esto incluye la Comunidad
+          Andina (CAN), que permite el comercio preferencial con otros países
+          miembros, así como otros tratados bilaterales y multilaterales que
+          favorecen el intercambio comercial. <br />
+          Facilitación Aduanera: <br />
+          El derecho empresarial en materia aduanera ha incorporado medidas para
+          agilizar y facilitar los procedimientos de importación. La
+          simplificación de trámites y el uso de tecnologías avanzadas en las
+          aduanas han contribuido a mejorar la eficiencia en el despacho de
+          mercancías y reducir tiempos de espera.
         </p>
       </div>
-      <div className=" bg-red-900 h-80 m-2 flex items-center justify-center w-80 sm:w-80 sm:h-80 sm:my-auto border-8 mx-auto border-solid border-red-800">
-        <Image
-          src="/Img/derechoAgrario.png"
-          alt="foto"
-          width={400}
-          height={400}
-        />
-      </div>
+
       <div className=" bg-red-800 h-screeen m-2 border-8 border-solid border-gray-800 sm:col-span-3">
         <h1 className="text-white text-xl p-2 text-center font-thin font-orbitron">
           {" "}
           TEMAS QUE ABORDAMOS
         </h1>
         <p className="text-white p-4 sm:ps-20 sm:hyphens-none ">
-          REGULARIZACION DE TIERRAS RURALES:
+          Explotación de Recursos Naturales en Bolivia: <br />
+          Asesoría en Cumplimiento Ambiental:
+          <br /> Asesoramos a empresas para cumplir con regulaciones ambientales
+          y elaboramos planes de manejo para la explotación sostenible de
+          recursos naturales.
           <br />
-          Asesoramiento en la obtención y regularización de títulos de propiedad
-          para tierras rurales. <br />
-          Procedimientos legales para resolver conflictos de tierras y derechos
-          de posesión en comunidades rurales.
+          Contratos de Responsabilidad Social Empresarial: <br />
+          Redactamos contratos que establezcan compromisos sociales y
+          ambientales de las empresas en sus operaciones.
           <br />
-          Gestión de trámites ante las autoridades competentes para asegurar la
-          seguridad jurídica de las tierras agrícolas.
+          Evaluación de Impacto Ambiental: <br />
+          Realizamos estudios de impacto ambiental para proyectos extractivos,
+          asegurando el cumplimiento normativo y evitando conflictos legales.
           <br />
-          CONTRATOS AGRARIOS:
+          Negociación con Comunidades Indígenas: <br />
+          Asesoramos en la negociación y establecimiento de acuerdos con
+          comunidades locales para obtener su consentimiento y apoyo en
+          proyectos industriales
           <br />
-          Elaboración y revisión de contratos de arrendamiento y contratos de
-          compra-venta de tierras agrícolas.
+          Litigio Ambiental y Controversias: Representamos a empresas en casos
+          de litigio relacionados con impacto ambiental y conflictos
+          socioambientales.
           <br />
-          Asesoría en la redacción de contratos de producción y contratos de
-          suministro para la adquisición de insumos agrícolas.
+          Due Diligence Legal: Realizamos auditorías legales para evaluar el
+          cumplimiento normativo de empresas en actividades extractivas.
           <br />
-          Negociación y mediación en la resolución de conflictos contractuales
-          entre agricultores y propietarios de tierras.
+          Asesoría en Derecho Minero: Brindamos orientación en el proceso de
+          obtención y renovación de licencias mineras.
           <br />
-        COMERCIO INTERNACIONAL AGRICOLA:
+          Planificación Tributaria para Empresas Extractivas:
+          <br /> Asesoramos en la optimización de estructuras tributarias para
+          empresas del sector extractivo.
           <br />
-          Asesoramiento en la importación y exportación de productos agrícolas,
-          considerando los tratados comerciales internacionales en los que
-          Bolivia es parte.
+          Resolución de Disputas en Contratos de Explotación: <br />
+          Representamos a empresas en casos de incumplimiento de contratos de
+          explotación de recursos naturales.
           <br />
-          Evaluación de aranceles, cuotas y regulaciones de importación y
-          exportación aplicables al comercio agrícola. <br />
-          Representación ante instituciones gubernamentales y aduanas para
-          asegurar el cumplimiento de las políticas de comercio agrícola.
+          Derechos de Agua y Usos de Recursos Hídricos: <br />
+          Asesoramos en la obtención y uso adecuado de derechos de agua para
+          actividades industriales.
           <br />
-          LITIGIOS Y RESOLUCION DE CONFLICTOS AGRARIOS:
+          Asesoría en Clasificación Arancelaria: <br />
+          Asistimos en la correcta clasificación arancelaria de mercancías para
+          el cálculo de aranceles y la identificación de beneficios fiscales.
           <br />
-          Representación legal en procesos judiciales y administrativos
-          relacionados con disputas de propiedad, tenencia de tierras y derechos
-          agrarios.
+          Representación en Inspecciones Aduaneras:
+          <br /> Defendemos a empresas en casos de inspecciones aduaneras y
+          resolvemos controversias en la valoración y clasificación de
+          mercancías.
           <br />
-          Mediación y arbitraje para resolver conflictos entre actores del
-          sector agrícola.
+          Cumplimiento de Regulaciones Sanitarias: <br />
+          Asesoramos en el cumplimiento de requisitos sanitarios para la
+          importación de alimentos y productos farmacéuticos.
           <br />
-          Defensa de los intereses de los clientes en casos de controversias
-          comerciales agrícolas y disputas agrarias.
+          Tramitación de Licencias y Permisos de Importación: <br /> Gestionamos
+          licencias y permisos necesarios para la importación de productos
+          sujetos a regulaciones específicas.
           <br />
-          CUMPLIMIENTO NORMATIVO Y RESPONSABILIDAD SOCIAL:
+          Asesoría en Zonas Francas y Depósitos Aduaneros:
           <br />
-          Asesoramiento en la adopción de prácticas agrícolas sostenibles y en
-          línea con las regulaciones ambientales bolivianas.
+          Brindamos orientación en el régimen de zonas francas y depósitos
+          aduaneros para el almacenamiento y comercialización de mercancías
+          importadas.
           <br />
-          Evaluación y cumplimiento de normativas nacionales agrarias y de
-          trabajo rural.
+          Defensa en Procedimientos de Comiso Aduanero: <br />
+          Representamos a empresas en casos de comiso aduanero y recuperación de
+          mercancías retenidas.
           <br />
-          Desarrollo de políticas de responsabilidad social empresarial en el
-          sector agrícola boliviano.
+          Consultoría en Incoterms y Contratos de Compraventa Internacional:
+          <br /> Asesoramos en la elección de términos comerciales adecuados y
+          redactamos contratos internacionales de compraventa.
+          <br />
+          Asesoría en Procesos de Drawback: Gestionamos la devolución de
+          impuestos a la importación en casos de reexportación de mercancías.
+          <br />
+          Cumplimiento de Normas de Etiquetado y Marcado:
+          <br />
+          Asesoramos en el etiquetado y marcado adecuado de productos importados
+          para cumplir con las normativas vigentes.
+          <br />
+          Reclamación de Impuestos de Importación Pagados en Exceso: <br />
+          Representamos a empresas en procedimientos para recuperar impuestos
+          pagados en exceso en importaciones.
           <br />
         </p>
       </div>

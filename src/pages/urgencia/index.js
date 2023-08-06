@@ -1,12 +1,16 @@
 import React from 'react'
 import Layout from '../../../components/Layout'
-import AutocompleteForm from './components/AutocompleteForm'
+import UrgentPopup from './components/UrgentPopup'
+
+
+
 
 const index = () => {
   return (
     <Layout>
     <div>
-      <AutocompleteForm/>
+  <UrgentPopup/>
+
     </div>
     </Layout>
   )

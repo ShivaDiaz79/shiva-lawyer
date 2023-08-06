@@ -53,8 +53,8 @@ const MenuPlegable = ({ menuDown }) => {
                     className=" flex  bg-red-800 ps-24 ms-20"
                   />
                   <MenuItem
-                    link="/servicios/derechoInternacionalPenal"
-                    text="DERECHO INTERNACIONAL PENAL"
+                    link="/servicios/derechoCivil"
+                    text="DERECHO CIVIL"
                     className=" bg-red-800 ps-24 ms-20"
                   />
                   <MenuItem
@@ -88,7 +88,7 @@ const MenuPlegable = ({ menuDown }) => {
                     className=" bg-red-800 ps-24 ms-20"
                   />
                   <MenuItem
-                    link="/ejecucionPenal"
+                    link="/servicios/ejecucionPenal"
                     text="EJECUCION PRIVATIVA DE LA PENA"
                     className=" bg-red-800 ps-24 ms-20"
                   />

@@ -7,7 +7,7 @@ import Dribbble from "../Svg/Dribbble";
 import Github from "../Svg/Github";
 
 const FooterLink = ({ href, text, icon: Icon }) => (
-  <Link href={href} className="text-gray-500 transition hover:opacity-75">
+  <Link href={href} className="text-white transition hover:opacity-75">
     {Icon ? <Icon /> : text}
   </Link>
 );
@@ -31,7 +31,7 @@ const Footer = () => {
     } else {
       // El usuario eligió llenar un formulario
       // Redirigir a la página de 'urgencia'
-      window.location.href = "/urgencia";
+      window.location.href = "/solicitudes";
     }
   };
 
@@ -44,14 +44,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-800">
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="text-center">
-          <h2 className="text-2xl font-extrabold font-dancing text-gray-900 sm:text-5xl">
+          <h2 className="text-2xl font-extrabold font-dancing text-white sm:text-5xl">
             No hay hechos eternos, como tampoco hay verdades absolutas.
           </h2>
 
-          <p className=" text-gray-500">{footerText}</p>
+          <p className=" text-white">{footerText}</p>
 
           <div
             onClick={handleUrgenciasClick}
