@@ -44,7 +44,7 @@ const Gallery = () => {
 
   return (
     <div className=" bg-gray-800 flex flex-col items-center justify-center h-screen text-gray-800">
-      <div className="relative w-full h-full">
+      <div className=" absolute w-full h-full">
       <Image
           src={images[currentIndex].src}
           alt={images[currentIndex].title}

@@ -45,7 +45,9 @@ const SectionFamilia = () => {
         <p className="text-white p-4">
           A pesar de su importancia, el derecho de familia en Bolivia enfrenta
           diversos retos y desafíos que requieren atención y soluciones
-          adecuadas. Algunos de estos desafíos son los siguientes: a) Cambio de
+          adecuadas. 
+          <br/>Algunos de estos desafíos son los siguientes:<br/>
+           a) Cambio de
           modelos familiares: La sociedad boliviana está experimentando cambios
           en los modelos familiares, lo que demanda una adaptación del derecho
           de familia para abordar nuevas situaciones, como las familias

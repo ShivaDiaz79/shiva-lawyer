@@ -17,7 +17,7 @@ const LetrasAnimadas = ({
   useEffect(() => {
     const titleOptions = {
       strings: Array.isArray(title) ? title : [title],
-      typeSpeed: 50,  // Ajusta este valor según tus necesidades
+      typeSpeed: 150,  // Ajusta este valor según tus necesidades
       backSpeed: 30,  // Ajusta este valor según tus necesidades
       loop: true,
       showCursor: true,
@@ -55,7 +55,7 @@ const LetrasAnimadas = ({
   }, [title, paragraph]);
 
   return (
-    <div className="relative flex flex-col justify-center py-40 mx-4 sm:mx-10">
+    <div className="relative flex flex-col justify-center mx-4 sm:mx-10">
       <h1
         ref={titleRef}
         className={`${titleStyle} ${h1Color}`}

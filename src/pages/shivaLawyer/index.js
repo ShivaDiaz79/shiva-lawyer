@@ -1,14 +1,12 @@
-
-import SectionShiva from './components/sectionShiva'
-import Layout from '../../../components/Layout'
+import SectionShiva from "./components/sectionShiva";
+import Layout from "../../../components/Layout";
 
 const index = () => {
   return (
-   <Layout>
-      
-      <SectionShiva/>
-      </Layout>
-  )
-}
+    <Layout>
+      <SectionShiva />
+    </Layout>
+  );
+};
 
-export default index
+export default index;

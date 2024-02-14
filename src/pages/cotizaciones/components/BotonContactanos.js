@@ -4,8 +4,8 @@ import { toast } from 'react-toastify';
 const BotonContactanos = () => {
   const handleContactanosClick = () => {
     toast.info(
-      <div>
-        <p>Contáctanos a través de WhatsApp al número 73665607</p>
+      <div className='bg-orange-500'>
+        <p className='text-white  font-orbitron p-10 font-bold'>Contáctanos a través de WhatsApp al número 73665607</p>
       </div>,
       {
         position: toast.POSITION.TOP_CENTER,
@@ -19,12 +19,14 @@ const BotonContactanos = () => {
   };
 
   return (
+    <div className='flex justify-center items-center m-5'>
     <button
-      className="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 ms-20"
+      className="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 text-center"
       onClick={handleContactanosClick}
     >
       Contáctanos (WhatsApp)
     </button>
+    </div>
   );
 };
 

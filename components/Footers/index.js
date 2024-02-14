@@ -5,6 +5,7 @@ import Instagram from "../Svg/Instagram";
 import Facebook from "../Svg/Facebook";
 import Dribbble from "../Svg/Dribbble";
 import Github from "../Svg/Github";
+import LetrasAnimadas from "../Contenido/LetrasAnimadas";
 
 const FooterLink = ({ href, text, icon: Icon }) => (
   <Link href={href} className="text-white transition hover:opacity-75">
@@ -13,9 +14,6 @@ const FooterLink = ({ href, text, icon: Icon }) => (
 );
 
 const Footer = () => {
-  const footerText =
-    "El derecho no esta en la norma sino en la conducta. Por eso el derecho es vida humana viviente. No se interpreta la norma sino la conducta, es una hermeneutica existencial. Carlos Cossio.";
-
   const handleUrgenciasClick = () => {
     const confirmText =
       "¿Deseas ingresar directamente a WhatsApp o llenar un formulario?\n\n" +
@@ -50,12 +48,22 @@ const Footer = () => {
           <h2 className="text-2xl font-extrabold font-dancing text-white sm:text-5xl">
             No hay hechos eternos, como tampoco hay verdades absolutas.
           </h2>
-
-          <p className=" text-white">{footerText}</p>
+          <div>
+            <LetrasAnimadas
+              title={[
+                "El derecho no esta en la norma sino en la conducta. Por eso el derecho es vida humana viviente. No se interpreta la norma sino la conducta, es una hermeneutica existencial. Carlos Cossio",
+              ]}
+              paragraph={[""]}
+              titleStyle=" "
+              paragraphStyle="text-lg"
+              h1Color="text-white"
+              paragraphColor="text-gray-600"
+            />
+          </div>
 
           <div
             onClick={handleUrgenciasClick}
-            className="mt-8 inline-block rounded-full border border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500 cursor-pointer"
+            className="mt-8 inline-block rounded-full border border-red-800 px-12 py-3 text-sm font-medium text-red-800 hover:bg-red-800 hover:text-white focus:outline-none focus:ring active:bg-red-800 cursor-pointer"
           >
             URGENCIAS
           </div>
@@ -64,15 +72,21 @@ const Footer = () => {
         <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
-              <FooterLink href=" ./terminosCondiciones" text="Terminos & Condiciones" />
+              <FooterLink
+                href="  /piedePagina/terminosCondiciones"
+                text="Terminos & Condiciones"
+              />
             </li>
 
             <li>
-              <FooterLink href="#" text="Politica de Privacidad" />
+              <FooterLink
+                href=" /piedePagina/potiticaPrivacidad"
+                text="Politica de Privacidad"
+              />
             </li>
 
             <li>
-              <FooterLink href=" ./comentarios" text="Comentarios" />
+              <FooterLink href=" /piedePagina/comentarios" text="Comentarios" />
             </li>
           </ul>
 

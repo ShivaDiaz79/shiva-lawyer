@@ -14,7 +14,8 @@ export {
   Footers,
   Gallery,
   SearchComponent,
-  TypedTextWithColorChange 
+  TypedTextWithColorChange,
+
  
 
   // otros componentes

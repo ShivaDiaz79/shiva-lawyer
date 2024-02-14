@@ -1,11 +1,11 @@
-
+import SectionEtica from './components/sectionEtica'
 import Layout from '../../../components/Layout'
 
 const index = () => {
   return (
 
     <Layout>
-    <div>index</div>
+    <SectionEtica/>
     </Layout>
   )
 }
