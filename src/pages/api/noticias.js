@@ -1,4 +1,4 @@
-import { getNews } from "../../../utilss/getNews";
+import { getNews } from "../../utilss/getNews";
 
 export default async function handler(req, res) {
   try {
